@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1298cf50b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation Bar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{{url_for('home')}}">
+          <img
+            class="logoh"
+            src="{{ url_for('static', filename='logo.jpg') }}"
+            alt="Bootstrap"
+            width="30"
+            height="24"
+          />
+          Phoenix Wellness Center
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="{{url_for('home')}}"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Check Locations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Check Companies on Panel</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="{{url_for('xray')}}">Pneumonia X-Ray Detection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('login')}}">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar End -->
+    <!-- Carousel Cards Start -->
+    <br />
+    <div id="carousel" class="carousel carousel-dark slide carousel-fade">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            class="slideshowim"
+            src="{{ url_for('static', filename='image1.jpeg') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Best in Class Surgery Facilities</h5>
+            <p>
+              Best minimal invasive surgery hospitals in India for minimally
+              invasive procedures to reduce patient trauma and post surgery
+              recovery time.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            class="slideshowim"
+            src="{{ url_for('static', filename='image2.webp') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>More than 200 Beds for Patients</h5>
+            <p>
+              These beds have oxygen supply and oxygen cylinders, with over 50
+              ICU beds is the Hospital.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="slideshowim"
+            src="{{ url_for('static', filename='image3.png') }}"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Helpful and Caring Staff</h5>
+            <p>
+              This facility promises to bring high precision multi-specialty
+              clinical care for the people of the region.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel Cards End -->
+    <!-- Cards Starts -->
+    <br />
+    <p class="blogs">Health Blogs</p>
+    <div class="card-group mx-auto">
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='brain.png') }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Meningioma - Answers to FAQs</h5>
+          <p class="card-text">
+            A meningioma tumor can be a severe condition, as it typically occurs
+            on the brain, which means it causes a number of other serious
+            conditions. In most cases, these tumors can grow slowly or quickly,
+            depending on the classification of being benign or cancerous.
+            Fortunately, around 90% of these tumors are benign.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary"
+              >By Dr. Aviral Jain - Neurology</small
+            >
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='disease.jpeg') }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Monkeypox - Causes and Symptoms</h5>
+          <p class="card-text">
+            Monkeypox is a smallpox-like viral disease. The first case was
+            discovered in 1958 when a pox-like disease occurred in monkeys
+            undergoing research; therefore, the name of the disease is
+            Monkeypox. The first human case of Monkeypox was reported in 1970 in
+            the Democratic Republic of Congo. Since then, cases have been
+            reported primarily in Central and West Africa. Though it can affect
+            anyone, children tend to get affected more than adults.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary"
+              >By Dr. Nishant Joshi - Internal Medicine</small
+            >
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="{{ url_for('static', filename='fnv.jpeg') }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">10 Foods that improve Memory and Focus</h5>
+          <p class="card-text">
+            Eating an adequate diet is beneficial for both mental and physical
+            health. The brain plays the role of a command center in our body,
+            and just like every other body part, the brain also requires some
+            specific nutrients to work efficiently. By incorporating specific
+            nutrients into our everyday diet, we can improve our memory and
+            focus.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary"
+              >By Dr. Viraaj Singh Luther - Nutrition and Dietetics</small
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Cards End -->
+    <!-- Footer Starts -->
+    <div class="footer">
+      <br>
+      <span class="footer-text">© Copyrights Reserved - 2023</span>
+    </div>
+    <!-- Footer Ends -->
+  </body>
+</html>

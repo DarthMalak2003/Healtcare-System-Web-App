@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  height: 100%;
+}
+
+.logoh {
+  border-radius: 75%;
+}
+.navbar-nav {
+  margin-left: 78%;
+}
+.slideshowim {
+  margin-left: 17%;
+  height: 500px;
+  width: 65%;
+  border-radius: 5%;
+}
+.carousel-caption {
+  background-color: #2980b9;
+  margin: auto;
+  width: 35%;
+  border-radius: 15px;
+  opacity: 90%;
+}
+.carousel-control-next {
+  margin-right: 7%;
+}
+.carousel-control-prev {
+  margin-left: 7%;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5%;
+  bottom: 0;
+  background-color: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+.footer-text {
+  color: whitesmoke;
+}
+.card-group {
+    width: 90%;
+}
+.card-img-top {
+    height: 250px;
+}
+.card {
+    background-color: #F4DFC8;
+    margin: 1%;
+}
+.blogs {
+    margin-left: 10px;
+    font-size: 42px;
+    color: whitesmoke;
+}
