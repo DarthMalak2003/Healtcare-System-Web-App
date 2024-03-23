@@ -1,3 +1,4 @@
 # HealtcareSystemWebApp
  
-Created a website for the functioning of a Healthcare System. Tensorflow is used for ML model prediction wherein users can input in an X-Ray Chest Image and then model can determine if the person has Pneumonia or not.
+The project brings together a diverse set of technologies, creating a comprehensive and well-rounded solution. This integration allows for a more holistic approach to healthcare management, covering aspects of user interface design, interactivity, predictive analytics, and backend efficiency.
+It also provides users with an option to upload their Chest X-Ray and get a diagnostic for the same using our ML Model.
